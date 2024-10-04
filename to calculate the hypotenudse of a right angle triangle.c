@@ -2,13 +2,9 @@
 #include <math.h>
 void main()
 {
-    float a,b,c;
-    printf("Enter the number:\n");
-    scanf("%f",&c);
-    a=ceil(c);
-    b=floor(c);
-    //  celing is greater integer funtion  
-    printf(" celing of number:%f\n",a);
-    //celing is smaller integer funtion  
-     printf(" floor of number:%f\n",b);
+float a,b,c;
+printf("Please enter the height and base of given triangle:\n");
+scanf("%f%f",&a,&c);
+c=pow( pow(a,2)+pow(c,2),0.5);
+printf("The hypotenuse of the given triangle is %f:",c);
 }
